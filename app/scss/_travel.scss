@@ -1,0 +1,76 @@
+.travel{
+    background-image: url(../img/travel/travel_glass.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding: 160px 0 320px;
+    .slider_arrow {
+        top: 245px;
+    }
+    &_slider_head{
+        background-repeat: no-repeat;
+        background-position: top left;
+        min-height: 780px;
+    }
+    &_slider_subtitle{
+        text-align: right;
+        padding: 130px 80px 0 0;
+    }
+    &_slider_descr{
+        background-repeat: no-repeat;
+        background-position: center right;
+        min-height: 320px;
+        padding-top: 130px;
+        margin-top: -200px;
+    }
+    &_slider_info{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
+    &_slider_info_item{
+        position: relative;
+        min-height: 200px;
+    }
+    &_slider_info_subtitle{
+        position: absolute;
+        top: 85px;
+        left: -122px;
+        width: 200px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        transform: rotate(-90deg);
+        white-space: nowrap;
+        text-align: right;
+    }
+    &_slider_info_title{
+        position: relative;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        max-width: 200px;
+        span {
+        position: absolute;
+        bottom: -28px;
+        right: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 36px;
+        letter-spacing: 5.25px;
+        text-transform: uppercase;
+        opacity: 0.75;
+        }
+    }
+    &_slider_btn{
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,74 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .sleep{
+        position: relative;
+        background-image: url(../img/sleep/sleep_bed.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        min-height: 290px;
+    &_head{
+        background-position: top left;
+        background-repeat: no-repeat;
+        min-height: 780px;
+    }
+    &_head{
+        text-align: right;
+        margin-right: 80px;
+    }
+    &_subtitle{
+        display: inline-block;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: right;
+        letter-spacing: 7.33333px;
+        text-transform: uppercase;
+        opacity: 0.5;
+        position: relative;
+        padding-left: 105px;
+        &::before{
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: white;
+        top: 50%;
+        left: 0;
+        }
+    }
+    &_title{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 86px;
+        text-align: right;
+        text-transform: uppercase;
+    }
+     &_bot{
+    } 
+    &_info{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+    
+} 
