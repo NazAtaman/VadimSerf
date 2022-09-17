@@ -1,0 +1,247 @@
+.shop{
+   background-image: url(../img/shop/shop_bg.png);
+   background-repeat: no-repeat;
+   background-position: right center;
+   margin-bottom: 300px;
+    &_slider_inner{
+        display: flex;
+    }
+    &_slider{
+        
+    }
+    &_slider_info{
+        padding: 160px 0 0 160px;
+        max-width: 641px;
+        width: 100%;
+        margin-right: 40px;
+    }
+    &_slider_descr{
+        margin-bottom: 40px;
+    }
+    &_slider_descr_subtitle{
+        display: inline-block;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        letter-spacing: 7.33333px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        opacity: 0.5;
+        position: relative;
+        padding-right: 105px;
+        &::after{
+            display: block;
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 80px;
+            height: 1px;
+            background: #FFFFFF;
+        }
+    }
+    &_slider_descr_title{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &_slider_info_price{
+        margin-bottom: 80px;
+        span{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        }
+        sup{
+        font-size: 18px;
+        }
+    }
+    &_slider_info_list{
+        display: flex;
+    }
+    &_slider_info_item{
+        margin-left: -15px;
+    }
+ 
+    &_slider_info_button{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 36px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        span{
+            margin-left: 20px;
+            padding: 17px 55px 25px 17px;
+            background: #4AF6CD;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: "";
+                top: 44%;
+                left: -19px;
+                width: 30px;
+                height: 2px;
+                background-color: white;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                background-image: url(../img/shop/arrow.svg);
+                width: 25px;
+                height: 20px;
+                top: 33%;
+                right: 14px;
+            }
+
+        }
+    }
+
+    &_slider_content{
+        display: flex;
+        align-items: flex-end;
+        padding-left: 150px;
+    }
+    &_slider_extras{
+        padding-left: 170px;
+    }
+    &_slider_extras_title{
+        padding-bottom: 25px;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &_slider_extras_inner{
+        display: flex;
+    }
+    &_slider_extras_box{
+        text-align: center;
+        margin-right: 90px;
+    }
+    &_slider_extras_pic{
+        min-height: 105px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &_slider_box_title{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+    &_slider_box_price{
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &_slider_supboard{
+        position: relative;
+    }
+
+    &_circle{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 200px;
+        right: -330px;
+    }
+
+    &_circle_position-1{
+        top: 200px;
+        right: -330px;
+    }
+    &_circle_position-2{
+        top: 300px;
+        right: -200px;
+    }
+    &_circle_position-3{
+        top: 550px;
+        right: -200px;
+        .shop_circle_text{
+            position: relative;
+            left: -500px;
+            &::after{
+                left: 375px;
+            }
+        }
+    }
+
+    &_circle_box.active + &_circle_text {
+        display: block;
+    }
+
+    &_circle_box{
+        cursor: pointer;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        left: -400px;
+        top: 12px;
+        &.active{
+            .shop_circle_row{
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+        }
+    }
+    &_circle_box.active {
+        left: -30px;
+        top: 12px;
+    }
+   
+
+
+    &_circle_row{
+        position: absolute;
+        background-color: green;
+        width: 11px;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0deg);
+        & + .shop_circle_row{
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+        }
+
+    &_circle_text{
+        display: none;
+        padding-left: 110px;
+        font-weight: 800;
+        width: 370px;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 80px;
+            height: 1px;
+            background-color: white;
+            top: 50%;
+            left: 17px;
+        }
+    }
+    
+
+}

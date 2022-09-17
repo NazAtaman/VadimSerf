@@ -90,3 +90,79 @@ ul,li{
     margin: 0;
 }
 
+.summ{
+    position: relative;
+}
+
+
+.quantity {
+    display: inline-block;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button
+  {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type=number]
+  {
+    -moz-appearance: textfield;
+  }
+  
+  .quantity input {
+    float: left;
+    border:  none;
+    background-color: transparent;
+    width: 45px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  
+  .quantity input:focus {
+    outline: 0;
+  }
+  
+  .quantity-nav {
+    float: left;
+    position: static;
+    height: 42px;
+  }
+  
+  .quantity-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+   
+  }
+  
+  .quantity-button.quantity-up {
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    border: none;
+  }
+  
+  .quantity-button.quantity-down {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    border: none;
+
+  }
+
+  .star_list{
+    display: contents;
+    li{
+        margin-left: -15px;
+    }
+}

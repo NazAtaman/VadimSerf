@@ -1,0 +1,37 @@
+.footer{
+    text-align: center;
+    margin-bottom: 30px;
+    &_btn{
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 48px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 25px;
+        span{
+            background: #4AF6CD;
+            padding: 14px 18px;
+            position: relative;
+            margin-left: 25px;
+            &::before{
+                position: absolute;
+                content: "";
+                width: 40px;
+                height: 2px;
+                background-color: white;
+                top: 50%;
+                left: -25px;
+            }
+        }
+    }
+    &_rights{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 1.05px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+}
