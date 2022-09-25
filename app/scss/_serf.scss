@@ -171,6 +171,7 @@
 } */
 
 .slider_map{
+    overflow: hidden;
     max-width: 1200px;
     min-height: 635px;
     background-image: url(../img/serf/wordMap.png);
@@ -186,6 +187,7 @@
     }
     .slick-list{
     min-height: 635px;
+    overflow: visible;
     }
 }
 .slider_point_row{
@@ -194,7 +196,6 @@
 }
 .slider_point{
     position: relative;
-    
 }
 
 .slider_point_content{
@@ -222,7 +223,7 @@
     width: 20px;
     height: 20px;
     background-color: #4AF6CD;
-    border-radius: 50%;
+    border-radius: 50%; 
 }
 .slider_point_1{
     position: absolute;
